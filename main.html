@@ -33,19 +33,24 @@
     </style>
 </head>
 <body>
-    <div class="code-container">
+    <div >
         <h1 id="verification_heading">Verify Your Account</h1>
         <h2 id="verification_subtext">Enter the OTP sent to your email</h2>
-        <input type="text" class="code" maxlength="1" />
-        <input type="text" class="code" maxlength="1" />
-        <input type="text" class="code" maxlength="1" />
-        <input type="text" class="code" maxlength="1" />
-        <input type="text" class="code" maxlength="1" />
-        <input type="text" class="code" maxlength="1" />
+        <div class="code-container">
+			<input type="text" class="code" maxlength="1" />
+	        <input type="text" class="code" maxlength="1" />
+	        <input type="text" class="code" maxlength="1" />
+	        <input type="text" class="code" maxlength="1" />
+	        <input type="text" class="code" maxlength="1" />
+	        <input type="text" class="code" maxlength="1" />
+		</div>
     </div>
+
+	
     <script type="text/javascript">
         const inputs = document.querySelectorAll('.code');
 
+		console.log(inputs);
         inputs.forEach((input, index) => {
             input.addEventListener('input', () => {
                 if (input.value) {
